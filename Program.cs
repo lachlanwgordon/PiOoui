@@ -10,7 +10,7 @@ namespace PiOoui
         static void Main(string[] args)
         {
             Console.WriteLine("Starting Ooui");
-            UI.Host = "10.1.1.155";
+            //UI.Host = "10.1.1.155";//This line needed if running on pi and serving to other computers
             Forms.Init();
             var page = new ContentPage
             {

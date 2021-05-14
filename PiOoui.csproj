@@ -7,6 +7,11 @@
 
   <ItemGroup>
     <PackageReference Include="Ooui.Forms" Version="0.14.16" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
 </Project>

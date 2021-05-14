@@ -1,6 +1,7 @@
 ﻿using System;
 using Ooui;
 using Ooui.Forms;
+using PiOoui.Views;
 using Xamarin.Forms;
 using Label = Xamarin.Forms.Label;
 namespace PiOoui
@@ -12,16 +13,7 @@ namespace PiOoui
             Console.WriteLine("Starting Ooui");
             //UI.Host = "10.1.1.155";//This line needed if running on pi and serving to other computers
             Forms.Init();
-            var page = new ContentPage
-            {
-                Content = new StackLayout
-                {
-                    Children = 
-                    {
-                        new Label{ Text = "Hello"}
-                    }
-                }
-            };
+            var page = new XamlPage();
             var element = page.GetOouiElement();
             UI.Publish("/", element);
 
